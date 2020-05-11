@@ -16,14 +16,18 @@ $(function(){
   });
 
 
-  function getScreenSize() {
-
-    console.log(" 画面サイズの横幅 ");
-    console.log(window.parent.screen.width);
-
-    console.log(" 画面サイズの高さ ");
-    console.log(window.parent.screen.height);
-  }
+  $(window).scroll(function (){
+    $("#sample").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $(this).addClass("fade_on");
+      } else {
+        $(this).removeClass("fade_on");
+      }
+    });
+  });
 
 
 });
