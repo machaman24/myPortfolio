@@ -15,4 +15,15 @@ $(function(){
     $('.top-icon').attr('src','source/beer_11.png');
   });
 
+
+  function getScreenSize() {
+
+    console.log(" 画面サイズの横幅 ");
+    console.log(window.parent.screen.width);
+
+    console.log(" 画面サイズの高さ ");
+    console.log(window.parent.screen.height);
+  }
+
+
 });

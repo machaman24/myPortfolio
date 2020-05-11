@@ -1,4 +1,41 @@
-@media all and (max-width: 850px) {
-  *{
-    width: auto;
+@media all and (max-width: 480px) {
+  header{
+    width: 480px;
+    height: 100px;
   }
+
+  .main{
+    width: 480px;
+  }
+
+  .top{
+    height: 600px;
+  }
+
+  .top h1{
+    font-size: 30px;
+    top: 50%;
+    letter-spacing: 13px;
+  }
+
+  .profile h1{
+
+  }
+
+  .profile-item{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .profile-item li{
+    width: 100%;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+    background-color: rgba(0,50,200,0.05);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+}
