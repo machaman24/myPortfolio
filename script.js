@@ -32,8 +32,9 @@ $(function(){
   });
 
   //top load
-  $('.m').fadeIn(2000);
-  $('.not-m').fadeIn(500);
-
+  $(window).load(function () {
+    $('.m').fadeIn(2000);
+    $('.not-m').fadeIn(1000);
+  });
 
 });
