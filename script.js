@@ -1,4 +1,5 @@
 $(function(){
+  //scroll
   $('a[href^=#]').click(function(){
     var adjust = -100;
     var speed = 500;
@@ -9,13 +10,14 @@ $(function(){
     return false;
   });
 
+  //icon hover
   $('.top-icon').hover(()=>{
     $('.top-icon').attr('src','source/beer_10.png');
   },()=>{
     $('.top-icon').attr('src','source/beer_11.png');
   });
 
-
+  //profile fadeon/off
   $(window).scroll(function (){
     $("#sample").each(function(){
       var imgPos = $(this).offset().top;
@@ -28,6 +30,10 @@ $(function(){
       }
     });
   });
+
+  //top load
+  $('.m').fadeIn(2000);
+  $('.not-m').fadeIn(500);
 
 
 });

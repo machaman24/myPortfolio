@@ -90,8 +90,13 @@ header a:hover{
   height: 900px;
   background-image: url("source/cafe201261761_TP_V.jpg");
   background-size: cover;
-  opacity: 0.9;
   position: relative;
+}
+
+#bg-opacity{
+  background: rgba(255,255,255,.3);
+  width: 100%;
+  height: 100%;
 }
 
 .top h1{
@@ -105,6 +110,11 @@ header a:hover{
 
 .m{
   color: #66BB6A;
+  display: none;
+}
+
+.not-m{
+  display: none;
 }
 
 /* profile */
